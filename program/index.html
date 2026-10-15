@@ -51,7 +51,30 @@
 
     <h2>Konferenzprogramm</h2>
     <p>
-        <iframe src="https://conferences.uibk.ac.at/event/67/timetable/#20270214" width="100%" height="800px" style="border: none;"></iframe>
+        <!-- Bereich für den Download-Link -->
+<div class="pdf-download-area">
+  <p>
+    Hier kannst du die Datei herunterladen: 
+    <a href="./mein-dokument.pdf" download="Dokument.pdf" class="download-button">
+      📥 PDF herunterladen
+    </a>
+  </p>
+</div>
+
+<!-- Bereich für die Direktansicht (Eingebettetes PDF) -->
+<div class="pdf-viewer-container" style="width: 100%; max-width: 900px; margin: 20px auto;">
+  <iframe 
+    src="./mein-dokument.pdf" 
+    width="100%" 
+    height="600px" 
+    style="border: 1px solid #ccc; border-radius: 8px;">
+    <!-- Fallback für ältere Browser oder Mobilgeräte -->
+    <p>
+      Dein Browser kann dieses PDF nicht direkt anzeigen. 
+      <a href="./mein-dokument.pdf">Klicke hier, um das PDF zu öffnen.</a>
+    </p>
+  </iframe>
+</div>
     </p>
 <h4>Wichtige Termine</h4>
 
